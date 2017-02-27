@@ -47,7 +47,7 @@
 22. 單元22 - 課後專題：部屬應用程式到 Heroku 雲端伺服器
 
 23. 單元23 - Python Django Facebook API 整合入門（募資金額 200% 解鎖）
-
+   
 24. 單元24 - Python 自然語言處理與資料分析入門（募資金額 400% 解鎖）
 
 25. 單元25 - Python 網路爬蟲實戰入門（募資金額 600% 解鎖）
@@ -63,6 +63,11 @@
 4. Ipython
 5. [repl.it](https://repl.it)
 
+# Sublim 外掛（Sublime）
+1. Emmet
+2. HTML-CSS-JS Prettify
+3. Bracket​Highlighter 
+
 # 實戰教學（Examples）
 - [X] Pokemon
 - [] Stock
@@ -77,3 +82,4 @@
 2. [django-tutorial-for-programmers](https://github.com/uranusjr/django-tutorial-for-programmers)
 3. [專欄文章：Python Tutorial](http://openhome.cc/Gossip/CodeData/PythonTutorial/index.html)
 4. [Recommended Django Project Layout](http://www.revsys.com/blog/2014/nov/21/recommended-django-project-layout/)
+5. [Sublime Text 3 新手上路：必要的安裝、設定與基本使用教學](http://blog.miniasp.com/post/2014/01/06/Useful-tool-Sublime-Text-3-Quick-Start.aspx)
