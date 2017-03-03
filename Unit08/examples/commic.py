@@ -1,6 +1,5 @@
 import requests, os
 from bs4 import BeautifulSoup
-from urllib.request import urlopen
 
 url = 'http://v.comicbus.com/online/comic-103.html?ch=1'
 html = requests.get(url)
@@ -19,4 +18,4 @@ for link in all_links:
 	href = link.get('href')
 	attrs = [src, src] 
 
-print(attrs)
+print(attrs)    

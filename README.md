@@ -2,7 +2,7 @@
 由淺入深系統性學習原生 Python 和程式設計的重要觀念。去蕪存菁，完整介紹 Python 優良且重要的部份，並透過 Web 開發啟發學員興趣。讓學員可以系統性學習，打好程式設計基礎（課程內容將以 Python3 為主）。
 
 # 課程大綱（Syllabus）
-1. 單元1 - Python 程式設計初體驗（寶可夢 Pokemon 遊戲範例）
+1. 單元1 - Python 程式設計初體驗（寶可夢 Pokemon 對戰遊戲範例）
 
 2. 單元2 - Python 開發環境建置（終端機與編輯器）與 Github 操作入門
 
@@ -16,11 +16,11 @@
 
 7. 單元7 - HTML/CSS/JavaScript 簡易基礎
 
-8. 單元8 - 實戰範例：簡易網路爬蟲與資料分析（爬取台灣股票資料）
+8. 單元8 - 實戰範例：網路爬蟲與資料分析入門（爬取台灣股票資料）
 
 9. 單元9 - 實戰範例：自動偵測購物網站商品價格（以露天商品為例）
 
-10. 單元10 - 實戰範例：網路圖片下載器（漫畫下載器）
+10. 單元10 - 實戰範例：政府開放資料爬取（實價登錄）
 
 11. 單元11 - 實戰範例：Youtube 影片/漫畫圖片下載工具
 
@@ -48,13 +48,13 @@
 
 23. 單元23 - Python Django Facebook API 整合入門（募資金額 200% 解鎖）
    
-24. 單元24 - Python 自然語言處理與資料分析入門（募資金額 400% 解鎖）
+24. 單元24 -  Python Django PayPal API 電子商務金流串接（募資金額 400% 解鎖）
 
-25. 單元25 - Python 網路爬蟲實戰入門（募資金額 600% 解鎖）
+25. 單元25 - Python 自然語言處理與資料分析入門（募資金額 600% 解鎖）
 
-26. 單元26 - Python Django PayPal API 電子商務金流串接（募資金額 800% 解鎖）
+26. 單元26 - Python ChatterBot 聊天機器人入門實戰（募資金額 800% 解鎖）
 
-27. 單元27 - Python ChatterBot 聊天機器人入門實戰（募資金額 1000% 解鎖）
+27. 單元27 - Python TensorFlow 深度學習（deep learning）入門實戰（募資金額 1000% 解鎖）
 
 # 環境建置（Enviroment）
 1. Anaconda
@@ -67,6 +67,8 @@
 1. Emmet
 2. HTML-CSS-JS Prettify
 3. Bracket​Highlighter 
+4. Codecs33/ConvertToUTF8
+5. SublimeCodeIntel
 
 # 實戰教學（Examples）
 - [X] Pokemon
