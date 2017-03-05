@@ -1,24 +1,21 @@
-import unittest
-from selenium import webdriver
+import requests, os
+from bs4 import BeautifulSoup
 
-class Commic(unittest.TestCase):
+url = 'http://v.comicbus.com/online/comic-103.html?ch=1'
+html = requests.get(url)
 
-    def setUp(self):
-        self.driver = webdriver.PhantomJS()
-        self.driver.set_window_size(1120, 550)
+html.encoding = 'utf-8'
 
-    def test_url(self):
-        self.driver.get("http://duckduckgo.com/")
-        self.driver.find_element_by_id(
-            'search_form_input_homepage').send_keys("realpython")
-        self.driver.find_element_by_id("search_button_homepage").click()
-        self.assertIn(
-            "https://duckduckgo.com/?q=realpython", self.driver.current_url
-        )
+sp = BeautifulSoup(html.text, 'html.parser')
 
-    def tearDown(self):
-        print('finished')
-        self.driver.quit()
+images_dir = 'images/'
+if not os.path.exists(images_dir):
+	os.mkdir(images_dir)
 
-if __name__ == '__main__':
-    unittest.main()
+all_links = sp.find_all(['a', 'img'])
+for link in all_links:
+	src = link.get('src')
+	href = link.get('href')
+	attrs = [src, src] 
+
+print(attrs)    
