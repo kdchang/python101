@@ -22,7 +22,7 @@
 
 10. 單元10 - 實戰範例：台灣股票資料網路爬蟲與資料分析（爬取台灣股票資料）
 
-11. 單元11 - 實戰範例：網路爬取購物網站商品價格（PhantomJS 以 PChome/露天商品為例）
+11. 單元11 - 實戰範例：網路爬取購物網站商品價格（PhantomJS 以露天商品為例）
 
 12. 單元12 - 實戰範例：政府開放資料爬取（Pandas 實價登錄）
 
@@ -30,13 +30,13 @@
 
 14. 單元14 - Python Web 初體驗與網際網路基礎
 
-15. 單元15 - Django URL 管理與商業邏輯
+15. 單元15 - Django Model 與資料庫操作（ORM）
 
-16. 單元16 -  Django Template 和靜態資源
+16. 單元16 - Django 會員管理系統 admin
 
-17. 單元17 - Django Model 與資料庫操作（ORM）
+17. 單元17 - Django URL 管理與商業邏輯
 
-18. 單元18 - Django 會員管理系統 admin
+18. 單元18 -  Django Template 和靜態資源
 
 19. 單元19 - Django Cookie / Session（購物車範例）
 

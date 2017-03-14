@@ -1,0 +1,29 @@
+{% extends 'default/base.html' %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+{% block content %}
+<div class="jumbotron">
+  {% for message in messages %}
+    <div class="alert alert-success" role="alert">{{ message }}</div>
+  {% endfor %}
+  <div class="container">
+    <h1>分享料理的美好時刻！</h1>
+    <p>在這裡你可以分享你的私房食譜給喜愛料理的朋友們</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多 &raquo;</a></p>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+  	{% for recipe in recipes %}
+    <div class="col-md-4">
+		<h4>{{ recipe.title }}</h4>
+		<a class="thumbnail" href="/recipes/{{ recipe.id }}">
+			<img src="{{ recipe.image_path }}" alt="">
+		</a>
+		<p>{{ recipe.author_id }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div> <!-- /container -->
+{% endblock %}

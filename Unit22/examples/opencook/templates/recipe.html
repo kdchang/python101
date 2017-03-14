@@ -1,0 +1,18 @@
+{% extends 'default/base.html' %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+{% block content %}
+<div class="container main-container">
+  <!-- Example row of columns -->
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li class="active">{{ recipe.title }}</li>
+  </ol>
+  <div class="row">
+    <div class="col-md-4">
+		<h4>{{ recipe.title }}</h4>
+		<img src="{{ recipe.image_path }}" alt="">
+		<p>{{ recipe.description }}</p>
+    </div>
+  </div>
+</div> <!-- /container -->
+{% endblock %}

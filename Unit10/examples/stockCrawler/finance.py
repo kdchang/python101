@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -18,7 +19,7 @@ payload = {
 	'TYPEK': 'all',
 	'isnew': 'false',
 	'co_id': 2325,
-	'year': 103
+	'year': 104
 
 }
 
@@ -29,14 +30,17 @@ res.encoding = 'Big-5'
 
 soup = BeautifulSoup(res.content, 'lxml')
 
-for entry in soup.select('.odd'):
-	print(entry.text)
+co = soup.select('.hasBorder')
 
-
-r = requests.get('http://www.cnyes.com/twstock/finratio2/5388.htm', headers=headers)
 #print(BeautifulSoup(r.content, 'lxml').select('#currPrice'))
-tables = pd.read_html('http://www.cnyes.com/twstock/finratio2/5388.htm')[0]
+#tables = pd.read_html('http://www.cnyes.com/twstock/finratio2/5388.htm')[0]
 #print(tables)
 
 #for table in tables:
-print(tables.values[2])
+#print(tables.values[2])
+
+with open('r.html', 'w') as f:
+	f.write(str(co[0]))
+
+tables = pd.read_html('./r.html', encoding='utf-8')[0]
+print(tables[1][1])

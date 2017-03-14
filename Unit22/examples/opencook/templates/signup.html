@@ -1,0 +1,19 @@
+{% extends 'default/base.html' %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+{% block content %}
+<div class="container main-container">
+  <form class="form-signin" action="/signup/post" method="POST">
+    <h2 class="form-signin-heading">註冊帳號</h2>
+    <label for="Username" class="sr-only">Username</label>
+    <input type="text" id="Username" class="form-control" placeholder="Username" name="username" required autofocus>
+    <label for="Email" class="sr-only">Email</label>
+    <input type="email" id="username" class="form-control" placeholder="Email" name="email" required>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="password" class="form-control" placeholder="Password" name="password" required>
+    <hr>
+    {% csrf_token %}
+    <button class="btn btn-lg btn-primary btn-block" type="submit">馬上註冊</button>
+  </form>
+
+</div> <!-- /container -->
+{% endblock %}
