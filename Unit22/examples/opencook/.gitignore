@@ -1,0 +1,6 @@
+*.pyc
+__pycache__
+staticfiles
+db.sqlite3
+pyvenv35-heroku-django
+.env

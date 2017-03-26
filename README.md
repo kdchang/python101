@@ -18,39 +18,39 @@
 
 8. 單元8 - 實戰範例：網頁版 Youtube 影片下載工具（使用 Flask Web 框架）
 
-9. 單元9 - 實戰範例：PTT 表特版與八卦版網路圖片網路爬蟲基礎（Requests/BeautifulSoup/Selenium）
+9. 單元9 - 實戰範例：表特版與八卦版網路圖片下載與網路爬蟲基礎（Requests/BeautifulSoup/Selenium）
 
 10. 單元10 - 實戰範例：台灣股票資料網路爬蟲與資料分析（爬取台灣股票資料）
 
 11. 單元11 - 實戰範例：網路爬取購物網站商品價格（PhantomJS 以露天商品為例）
 
-12. 單元12 - 實戰範例：政府開放資料爬取（Pandas 實價登錄）
+12. 單元12 - 實戰範例：政府開放資料入門（Pandas 實價登錄）
 
-13. 單元13 - 實戰範例：OpenCV 人臉辨識範例（使用 Flask Web 框架，how-old.net）
+13. 單元13 - 實戰範例：OpenCV 人臉辨識入門範例（使用 Flask Web 框架，how-old.net）
 
-14. 單元14 - Python Web 初體驗與網際網路基礎
+14. 單元14 - Python Django Web 初體驗與網際網路基礎
 
-15. 單元15 - Django Model 與資料庫操作（ORM）
+15. 單元15 - Django URL 管理與商業邏輯
 
-16. 單元16 - Django 會員管理系統 admin
+16. 單元16 - Django Model 與資料庫操作（ORM）
 
-17. 單元17 - Django URL 管理與商業邏輯
+17. 單元17 - Django admin 後台會員管理系統 
 
-18. 單元18 -  Django Template 和靜態資源
+18. 單元18 - Django Template 和靜態資源
 
-19. 單元19 - Django Cookie / Session（購物車範例）
+19. 單元19 - Django Cookie / Session（login/signup）
 
-20. 單元20 - Django 會員登入與註冊
+20. 單元20 - Django 會員登入與註冊（auth）
 
-21. 單元21 - Django 網站前後端分離與 Restful API
+21. 單元21 - Django 網站前後端分離與 Restful API（留言、外鍵）
 
-22. 單元22 - 實戰範例：OpenCook 食譜分享社群網站開發實務
+22. 單元22 - 實戰範例：OpenCook 食譜分享社群網站開發實務（django-markdown）
 
-23. 單元23 - 實戰範例：部屬應用程式到 Heroku 雲端伺服器
+23. 單元23 - 實戰範例：部屬應用程式到 Heroku 雲端伺服器（ga/og tag）
 
 24. 單元24 - Python Django Facebook API 整合入門（募資金額 200% 解鎖）
    
-25. 單元25 -  Python Django PayPal API 電子商務金流串接（募資金額 400% 解鎖）
+25. 單元25 - Python Django PayPal API 電子商務金流串接（募資金額 400% 解鎖）
 
 26. 單元26 - Python 自然語言處理與資料分析入門（募資金額 600% 解鎖）
 

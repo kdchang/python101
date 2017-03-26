@@ -29,8 +29,6 @@ def parseTSE(year, month, no):
 
 	content = soup.select('.board_trad')[0]
 
-	print(content)
-
 	with open(year + month + '_tse_' + no + '.html', 'w') as f:
 		f.write(str(content))
 
@@ -38,7 +36,7 @@ def parseTSE(year, month, no):
 	table = table.drop(table.columns[0:2])
 	print(table.to_csv(header=False, index=False))
 
-	with open('./' + year + '_tse_' + no + '.csv', 'a') as f:
+	with open('./' + year + '_tse_' + no + '.csv', 'a') as f: # a 是寫在檔案最後面，不會覆寫
 		f.write(str(table.to_csv(header=False, index=False)))
 
 for m in range(1, 13):

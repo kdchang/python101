@@ -3,13 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>How Old Are You ?</title>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>How Old Are You ?</h1>
-    <form method=post enctype=multipart/form-data>
-      <p><input type=file name=file>
-         <input type=submit value=Upload>
-    </form>	
-    <img src="{{ newImagePath }}" alt="">
+	<div class="container">
+	    <h1>How Old Are You ?</h1>
+	    <form method=post enctype=multipart/form-data>
+	    	<input class="input" type=file name=file>
+	    	<hr>
+	    	<button class="btn btn-primary" type=submit value=Upload>上傳圖片</button>
+	    </form>	
+	    <hr>
+	    <img src="{{ newImagePath }}" alt="">
+	</div>
 </body>
 </html>

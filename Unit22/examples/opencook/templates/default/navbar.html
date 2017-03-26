@@ -12,9 +12,7 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">熱門食譜</a></li>
-        <li><a href="#">最新食譜</a></li>
-        <li><a href="#">食在商城</a></li>
+        <li><a href="/shop">食在商城</a></li>
       </ul>
       {% if user.is_authenticated  %}
         <ul class="nav navbar-nav navbar-right">
@@ -24,14 +22,15 @@
         </ul>
       {% else %}
         <form class="navbar-form navbar-right" action="/login/post" method="POST">
+          {% csrf_token %}
           <div class="form-group">
             <input type="text" placeholder="Username" class="form-control" name="username">
           </div>
           <div class="form-group">
             <input type="password" placeholder="Password" class="form-control" name="password">
           </div>
-          {% csrf_token %}
           <button type="submit" class="btn btn-success">登入</button>
+          <a href="/accounts/facebook/login/?process=login"><button type="button" class="btn btn-primary">使用 FB 登入</button></a>
           <a href="/signup"><button type="button" class="btn btn-primary">註冊</button></a>
         </form>
       {% endif %}

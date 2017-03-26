@@ -8,12 +8,8 @@
     <input type="text" id="title" class="form-control" placeholder="請輸入食譜名稱" name="title" required autofocus>
     <label for="Email">食譜圖片</label>
     <input type="text" id="image_path" class="form-control" placeholder="請輸入食譜圖片位置" name="image_path" required>
-    <label for="inputPassword">食譜描述</label>
-    <input type="text" id="description" class="form-control" placeholder="請輸入食譜描述" name="description" required>     
-    <label for="inputPassword">食譜原料</label>
-    <input type="text" id="integrent" class="form-control" placeholder="請輸入食譜原料" name="integrent" required>    
-    <label for="inputPassword">食譜步驟</label>
-    <input type="text" id="step" class="form-control" placeholder="請輸入食譜步驟" name="step" required>
+    <label for="description">食譜描述</label>
+    <textarea type="text" id="description" class="form-control" placeholder="請輸入食譜描述" name="description" required></textarea>     
     <hr>
     {% csrf_token %}
     <button class="btn btn-lg btn-primary btn-block" type="submit">馬上分享</button>
