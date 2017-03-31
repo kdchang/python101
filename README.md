@@ -52,12 +52,6 @@
    
 25. 單元25 - Python Django PayPal API 電子商務金流串接（募資金額 400% 解鎖）
 
-26. 單元26 - Python 自然語言處理與資料分析入門（募資金額 600% 解鎖）
-
-27. 單元27 - Python ChatterBot 聊天機器人入門實戰（募資金額 800% 解鎖）
-
-28. 單元28 - Python TensorFlow 深度學習（deep learning）入門實戰（募資金額 1000% 解鎖）
-
 # 環境建置（Enviroment）
 1. Anaconda
 2. Jupyter
