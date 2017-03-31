@@ -8,13 +8,13 @@
 
 3. 單元3 - Python 程式設計入門上（基本語法與流程控制）
 
-4. 單元4 - Python 程式設計入門中（資料結構與函式）
+4. 單元4 - Python 程式設計入門中（資料結構、函式與類別）
 
 5. 單元5 - Python 程式設計入門下（檔案處理與資料庫）
 
 6. 單元6 - Python 套件管理基礎
 
-7. 單元7 - HTML/CSS/JavaScript 簡易基礎
+7. 單元7 - HTML/CSS/JavaScript 簡易基礎（ajax）
 
 8. 單元8 - 實戰範例：網頁版 Youtube 影片下載工具（使用 Flask Web 框架）
 
@@ -42,7 +42,7 @@
 
 20. 單元20 - Django 會員登入與註冊（auth）
 
-21. 單元21 - Django 網站前後端分離與 Restful API（留言、外鍵）
+21. 單元21 - Django 網站前後端分離與 Restful API
 
 22. 單元22 - 實戰範例：OpenCook 食譜分享社群網站開發實務（django-markdown）
 
