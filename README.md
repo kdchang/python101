@@ -66,15 +66,6 @@
 4. Codecs33/ConvertToUTF8
 5. SublimeCodeIntel
 
-# 實戰教學（Examples）
-- [X] Pokemon
-- [] Stock
-- [] Ruten
-- [] Youtube
-- [X] OpenCook
-- [] Bingo
-- [] Jieba
-
 # 參考文件
 1. [Django Girls 學習指南](https://www.gitbook.com/book/djangogirlstaipei/django-girls-taipei-tutorial/details)
 2. [django-tutorial-for-programmers](https://github.com/uranusjr/django-tutorial-for-programmers)
