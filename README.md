@@ -46,7 +46,7 @@
 
 22. 單元22 - 實戰範例：OpenCook 食譜分享社群網站開發實務（django-markdown）
 
-23. 單元23 - 實戰範例：部屬應用程式到 Heroku 雲端伺服器（ga/og tag）
+23. 單元23 - 實戰範例：部屬應用程式到 Heroku 雲端伺服器（ga/og tag/disqus）
 
 24. 單元24 - Python Django Facebook API 整合入門（募資金額 200% 解鎖）
    
@@ -59,7 +59,7 @@
 4. Ipython
 5. [repl.it](https://repl.it)
 
-# Sublim 外掛（Sublime）
+# Sublime 外掛（Sublime）
 1. Emmet
 2. HTML-CSS-JS Prettify
 3. Bracket​Highlighter 
