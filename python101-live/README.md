@@ -18,7 +18,7 @@
 
 8. 單元8 - 實戰範例：網頁版 Youtube 影片下載工具（使用 Flask Web 框架）
 
-9. 單元9 - 實戰範例：表特版與八卦版網路圖片下載與網路爬蟲基礎（Requests/BeautifulSoup/Selenium）
+9. 單元9 - 實戰範例：表特版與八卦版網路圖片下載與網路爬蟲基礎（Requests/BeautifulSoup）
 
 10. 單元10 - 實戰範例：台灣股票資料網路爬蟲與資料分析（爬取台灣股票資料）
 

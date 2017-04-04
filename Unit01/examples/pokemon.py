@@ -1,8 +1,7 @@
 import random
 
-c_choice = random.randint(0, 2) # 0 - 2 (0, 1, 2 隨機數)
-
 def fight(ch):
+  c_choice = random.randint(0, 2) # 0 - 2 (0, 1, 2 隨機數)
   if ch == 0:
     print('你派了妙蛙種子')
     if c_choice == 0:
