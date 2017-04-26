@@ -1,0 +1,41 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OpenCook</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/shop">食在商城</a></li>
+    </ul>
+    {% if user.is_authenticated %}
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Hi, {{ user.username }}</a></li>
+      <li class="active"><a href="/recipes/create">分享食譜</a></li>
+      <form class="navbar-form navbar-right" method="POST" action="/logout/post">
+        <li class="active"><button class="btn btn-primary">登出</button></li>
+        {% csrf_token %}
+      </form>
+    </ul>
+    {% else %}        
+    <div id="navbar" class="navbar-collapse collapse">
+      <form method="POST" action="/login/post" class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" placeholder="username" name="username" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="password" name="password" class="form-control">
+        </div>
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success">登入</button>
+        <a href="/accounts/facebook/login/?process=login"><button type="button" class="btn btn-primary">FB 登入</button></a>
+        <a href="/signup"><button type="button" class="btn btn-primary">註冊</button></a>
+      </form>
+    </div><!--/.navbar-collapse -->
+    {% endif %}
+  </div>
+</nav>

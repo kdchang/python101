@@ -1,6 +1,7 @@
-from flask import Flask, render_template, redirect, request, url_for
+from flask import Flask, render_template, request, redirect, url_for
 from pytube import YouTube
-app = Flask(__name__, static_url_path='/static')
+
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -15,8 +16,9 @@ def post_submit():
 	video = yt.get('mp4', '360p')
 	video.download('./')
 	filename = yt.filename
+	print(yt)
+	print(yt.filename)
 	return redirect(url_for('index', filename=filename))
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
+	app.run(debug=True)

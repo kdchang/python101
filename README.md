@@ -44,9 +44,9 @@
 
 21. 單元21 - Django 網站前後端分離與 Restful API
 
-22. 單元22 - 實戰範例：OpenCook 食譜分享社群網站開發實務（django-markdown）
+22. 單元22 - 實戰範例：OpenCook 食譜分享社群網站開發實務
 
-23. 單元23 - 實戰範例：部屬應用程式到 Heroku 雲端伺服器（ga/og tag/disqus）
+23. 單元23 - 實戰範例：部屬應用程式到 Heroku 雲端伺服器
 
 24. 單元24 - Python Django Facebook API 整合入門（募資金額 200% 解鎖）
    

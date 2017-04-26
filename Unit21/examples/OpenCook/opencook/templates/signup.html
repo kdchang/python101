@@ -1,0 +1,19 @@
+{% extends 'default/base.html' %}
+{% block content %}
+<div class="container main-container">
+  <!-- Example row of columns -->
+  <h1>註冊帳號</h1>
+  <form method="POST" action="/signup/post">
+  	<label>請輸入使用者名稱</label>
+  	<input class="form-control" type="text" name="username" placeholder="username">
+  	<label>請輸入使用者 email</label>
+  	<input class="form-control" type="text" name="email" placeholder="email">
+  	<label>請輸入密碼</label>
+  	<input class="form-control" type="password" name="password" placeholder="password">
+  	<hr>
+  	{% csrf_token %}
+  	<button class="btn btn-primary btn-block" type="submit">提交送出</button>
+  </form>
+</div> <!-- /container -->
+
+{% endblock %}

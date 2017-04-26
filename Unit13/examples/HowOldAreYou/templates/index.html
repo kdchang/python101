@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>How Old Are You ?</title>
+	<title>How Old Are You?</title>
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
-	    <h1>How Old Are You ?</h1>
-	    <form method=post enctype=multipart/form-data>
-	    	<input class="input" type=file name=file>
-	    	<hr>
-	    	<button class="btn btn-primary" type=submit value=Upload>上傳圖片</button>
-	    </form>	
-	    <hr>
-	    <img src="{{ newImagePath }}" alt="">
+			<h1>How Old Are You?</h1>
+			<form action="/upload" enctype="multipart/form-data" method="POST">
+				<input type="file" name="img">
+				<hr>
+				<button class="btn btn-primary">上傳圖片</button>		
+			</form>
+			<hr>
+			{% if result %}
+				<img src="/static/images/{{ filename }}">
+			{% endif %}
 	</div>
 </body>
 </html>
