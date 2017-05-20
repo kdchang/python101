@@ -11,10 +11,10 @@ def parseTSE(year, month, no):
 	no = str(no)
 
 	payload = {
-		'myear': year,
-		'mmon': month,
-		'STK_NO': no,
-		'login_btn': '%ACd%B8%DF'
+		'query_year': year,
+		'query_month': month,
+		'CO_ID':no,
+		'query-button': '查詢'
 	}
 
 	headers = {
@@ -22,10 +22,10 @@ def parseTSE(year, month, no):
 	}
 
 	res = requests.post(url, headers=headers, data=payload)
-	data = res.text.encode('latin1').decode('big5')
+	data = res.text
 	soup = BeautifulSoup(data, 'html.parser')
 
-	content = soup.select('.board_trad')[0]
+	content = soup.select('table')[0]
 
 	with open('./' + year + month + '_tse_' + no + '.html', 'w') as f:
 		f.write(str(content))
