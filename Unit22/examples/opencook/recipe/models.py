@@ -6,6 +6,7 @@ class Recipe(models.Model):
 	title = models.CharField(max_length=100)
 	image_path = models.CharField(max_length=100)
 	description = models.TextField()
+	lable = models.TextField(default="default test value")
 	created_at = models.DateTimeField(default=timezone.now)
 
 	# def __unicode__(self):

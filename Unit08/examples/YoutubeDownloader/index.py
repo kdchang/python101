@@ -14,7 +14,7 @@ def post_submit():
 	url = request.form.get('url')
 	yt.url = url
 	video = yt.get('mp4', '360p')
-	video.download('./')
+	video.download('./', force_overwrite=True)
 	filename = yt.filename
 	print(yt)
 	print(yt.filename)
