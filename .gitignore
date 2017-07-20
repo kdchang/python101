@@ -2,3 +2,6 @@
 db.sqlite3
 __pycache__
 staticfiles
+Unit10/examples/Finance/*.html
+Unit10/examples/Finance/*.csv
+pyvenvtest35/
