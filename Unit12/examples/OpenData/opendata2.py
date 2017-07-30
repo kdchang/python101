@@ -10,6 +10,13 @@ items = json.loads(res.text)
 
 data = [0, 0]
 
+def make_autopct(values):
+    def my_autopct(pct):
+        total = sum(values)
+        val = int(round(pct*total/100.0))
+        return '{p:.2f}%  ({v:d})'.format(p=pct,v=val)
+    return my_autopct
+
 for item in items:
 	if item[6]['負責人性別']  == '男':
 		data[0] += 1
@@ -18,5 +25,5 @@ for item in items:
 
 labels = ['man', 'woman']
 
-plt.pie(data, labels=labels, autopct='%1.1f%%')
+plt.pie(data, labels=labels, autopct=make_autopct(data))
 plt.show()
